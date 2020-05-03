@@ -4,7 +4,5 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 public interface BarrymoreBrain extends Remote {
-    void registerBinding(BarrymoreBinding binding) throws RemoteException;
-    void unregisterBinding(BarrymoreBinding binding) throws RemoteException;
-    void processUserMessage(String callerName, String message) throws RemoteException;
+    void processUserMessage(BarrymoreBinding caller, int userHashCode, String message) throws RemoteException;
 }
