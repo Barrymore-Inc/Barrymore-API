@@ -6,13 +6,13 @@ public class Order implements Serializable {
     public Action action;
     public Subject[] subjects;
     public String[] parameters;
-    public int userHashCode;
+    public String response;
 
-    public Order(Action action, Subject[] subjects, String[] parameters, int userHashCode) {
+    public Order(Action action, Subject[] subjects, String[] parameters, String response) {
         this.action = action;
         this.subjects = subjects;
         this.parameters = parameters;
-        this.userHashCode = userHashCode;
+        this.response = response;
     }
 
     public Order() {
