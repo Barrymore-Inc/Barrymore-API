@@ -6,7 +6,7 @@
 
     <groupId>me.uquark</groupId>
     <artifactId>barrymore-api</artifactId>
-    <version>0.3.1</version>
+    <version>0.4.1</version>
 
     <build>
         <plugins>
